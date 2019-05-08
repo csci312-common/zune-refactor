@@ -2,7 +2,7 @@
 
 This example was adapted from [Berkeley cs169](https://github.com/saasbook/flipped-demos/tree/master/ch09-legacy/refactoring_timesetter) under a CC-BY-SA-NC license.
 
-On December 31, 2008, all Microsoft Zune MP3 players that were booted up on that day mysteriously froze. If you rebooted on January 1, 2009, it would work again. This example includes the buggy code, as explained in this [blog post](http://www.zuneboards.com/forums/showthread.php?t=38143), transliterated to ES6. Try 10593 (Dec 31, 2008) or 1827 (Dec 31, 1984) to trigger the bug (an infinite loop).
+On December 31, 2008, all Microsoft Zune MP3 players that were booted up on that day mysteriously froze. If you rebooted on January 1, 2009, it would work again. This example includes the buggy code, as explained in this [blog post](http://www.zuneboards.com/forums/showthread.php?t=38143), transliterated to ES6. Try 10593 (Dec 31, 2008) or 1827 (Dec 31, 1984) to trigger the bug (an infinite loop). Note that this implies that we start counting from 1, that is January 1 is day 1.
 
 ## Files
 

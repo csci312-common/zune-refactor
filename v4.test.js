@@ -34,6 +34,7 @@ describe('dayToYear function', () => {
 
     test('should not add a year when too few days', () => {
       expect(convert(255)).toEqual(1980);
+      expect(convert(365)).toEqual(1980);
     });
 
     test('should add a year when more days', () => {

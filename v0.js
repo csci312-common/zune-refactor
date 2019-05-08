@@ -2,7 +2,7 @@
 
 /**
  * Convert a number of days since 1/1/1980 to the year
- * @param  {[number]} d Days since 1/1/1980
+ * @param  {[number]} d Days since 1/1/1980, where 1/1 is day 1
  * @return {[number]}   Year
  */
 function convert(d) {

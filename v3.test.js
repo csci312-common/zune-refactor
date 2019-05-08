@@ -18,12 +18,14 @@ describe('dayToYear function', () => {
   });
 
   describe('Adding a year', () => {
-    test('should reduce daysLeft is greater than 365', () => {
-      expect(addCommonYear(1981, 366)).toEqual({ year: 1982, daysLeft: 1 });
+    test('should reduce daysLeft if greater than 365', () => {
+      const { daysLeft } = addCommonYear(1981, 366);
+      expect(daysLeft).toBeLessThan(365);
     });
 
-    test('should reduce daysLeft is greater than 365', () => {
-      expect(addLeapYear(1980, 366)).toEqual({ year: 1980, daysLeft: 366 });
+    test('should reduce daysLeft if greater than 365', () => {
+      const { daysLeft } = addLeapYear(1980, 366);
+      expect(daysLeft).toBeLessThan(365);
     });
   });
 });
