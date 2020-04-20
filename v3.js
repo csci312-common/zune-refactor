@@ -17,9 +17,11 @@ function convert(days) {
   let daysLeft = days;
 
   while (daysLeft > 365) {
-    ({ year, daysLeft } = isLeapYear(year)
-      ? addLeapYear(year, daysLeft)
-      : addCommonYear(year, daysLeft));
+    if (isLeapYear(year)) {
+      ({ year, daysLeft } = addLeapYear(year, daysLeft));
+    } else {
+      ({ year, daysLeft } = addCommonYear(year, daysLeft));
+    }
   }
   return year;
 }

@@ -1,3 +1,4 @@
+/* eslint no-constant-condition: ["error", { "checkLoops": false }] */
 function isLeapYear(year) {
   return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
 }
@@ -10,7 +11,7 @@ function convert(days) {
   let year = 1980;
   let daysLeft = days;
 
-  for (;;) {
+  while (true) {
     const daysInCurrentYear = daysInYear(year);
     if (daysLeft <= daysInCurrentYear) {
       return year;
